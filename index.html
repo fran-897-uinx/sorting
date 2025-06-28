@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="name"><h2>Sort your numbers</h2></div>
+        <menu>
+          <h5 onclick="show()" ondblclick="clos()">Click on me</h5>
+          <ul id="sort">
+            <li id="b-n" onclick="romshow()">big-number</li>
+            <li id="s-n" onclick="rovrom()">small-number</li>
+            <!-- <li id="even" onclick="binshow()">odd-number</li>
+            <li id="odd" onclick="rovbin()">even-number</li> -->
+            <!-- <li id="aplha">alphabet</li>
+            <li id="alpha-num">alpha-num</li> -->
+          </ul>
+        </menu>
+      </nav>
+      <section>
+        <div id="number">
+          <input
+            type="text"
+            placeholder="Select your large numbers "
+            id="input"
+            required
+          /><br />
+          <button onclick="acend()">Submit</button>
+        </div>
+        <div id="bin-num">
+          <input
+            type="text"
+            id="numberbinary"
+            placeholder="Select your small numbers"
+            required
+          /><br />
+          <button onclick="decend()">Submit</button>
+        </div>
+
+        <div id="num-Hex">
+          <input
+            type="text"
+            id="numbhex"
+            placeholder="Select your even numbers"
+            required
+          /><br />
+          <button onclick="even()">Submit</button>
+        </div>
+
+        <div id="Hex-num">
+          <input
+            type="text"
+            id="-hexnumb"
+            placeholder="Select your odd numbers"
+            required
+          /><br />
+          <button>Submit</button>
+        </div>
+      </section>
+
+      <div id="result"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

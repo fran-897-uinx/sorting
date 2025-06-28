@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+:root {
+  --background: #aaa;
+  --color: black;
+  --border-bottom: 1px solid #645454;
+  --border-radius: 15%;
+  --backgroun: #ddd;
+  --border: 2px solid;
+  --color: rgba(5, 37, 5, 0.733);
+}
+
+body {
+  background: var(--background);
+  place-items: center;
+  padding: 50px;
+}
+
+main {
+  background: var(--backgroun);
+  padding: 5%;
+  padding-top: 3%;
+  border: var(--border);
+  width: 500px;
+  display: block;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+  text-transform: capitalize;
+  float: left;
+  position: fixed;
+  padding-top: 1%;
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: #bbb 2px 3px 8px 2px;
+  /* padding: 9%; */
+  width: 120px;
+  display: none;
+  text-align: center;
+}
+
+li {
+  border-bottom: var(--border-bottom);
+  padding: 2%;
+  cursor: pointer;
+}
+
+li:hover {
+  background: var(--background);
+}
+li:active {
+  background: #1212;
+}
+
+h5 {
+  box-shadow: #bbb 2px 3px 8px 2px;
+  padding: 3%;
+  text-transform: capitalize;
+  text-indent: 2%;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+h5:active {
+  background: var(--background);
+}
+input {
+  height: 17%;
+  font-style: italic;
+  font-size: medium;
+  border: none;
+  background: none;
+  margin: 3%;
+}
+
+button {
+  background: var(--backgroun);
+  color: var(--color);
+  text-transform: capitalize;
+  width: 100px;
+  margin: 4%;
+  font-size: medium;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:active {
+  background: var(--background);
+}
+#Hex-num {
+  display: none;
+}
+#num-Hex {
+  display: none;
+}
+#bin-num {
+  display: none;
+}
+#result {
+  padding: 1.2%;
+  margin: 3%;
+}
